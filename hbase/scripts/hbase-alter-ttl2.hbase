@@ -1,0 +1,93 @@
+disable 'AgentInfo'
+alter 'AgentInfo' , {NAME=>'Info',TTL=>'7776000'}
+enable "AgentInfo"
+describe 'AgentInfo'
+
+disable 'AgentStat'
+alter 'AgentStat' , {NAME=>'S',TTL=>'1296000'}
+enable "AgentStat"
+describe 'AgentStat'
+
+disable 'AgentStatV2'
+alter 'AgentStatV2' , {NAME=>'S',TTL=>'1296000'}
+enable "AgentStatV2"
+describe 'AgentStatV2'
+
+
+
+disable 'AgentLifeCycle'
+alter 'AgentLifeCycle' , {NAME=>'S',TTL=>'1296000'}
+enable "AgentLifeCycle"
+describe 'AgentLifeCycle'
+
+disable 'AgentEvent'
+alter 'AgentEvent' , {NAME=>'E',TTL=>'1296000'}
+enable "AgentEvent"
+describe 'AgentEvent'
+
+disable 'ApplicationIndex'
+alter 'ApplicationIndex' , {NAME=>'Agents',TTL=>'7776000'}
+enable "ApplicationIndex"
+describe 'ApplicationIndex'
+
+
+disable 'StringMetaData'
+alter 'StringMetaData' , {NAME=>'Str',TTL=>'7776000'}
+enable "StringMetaData"
+describe 'StringMetaData'
+
+disable 'ApiMetaData'
+alter 'ApiMetaData' , {NAME=>'Api',TTL=>'7776000'}
+enable "ApiMetaData"
+describe 'ApiMetaData'
+
+
+
+disable 'SqlMetaData_Ver2'
+alter 'SqlMetaData_Ver2' , {NAME=>'Sql',TTL=>'7776000'}
+enable "SqlMetaData_Ver2"
+describe 'SqlMetaData_Ver2'
+
+
+disable 'ApplicationTraceIndex'
+alter 'ApplicationTraceIndex' , {NAME=>'I',TTL=>'1296000'}
+enable "ApplicationTraceIndex"
+describe 'ApplicationTraceIndex'
+
+disable 'TraceV2'
+alter 'TraceV2' , {NAME=>'S',TTL=>'1296000'}
+enable "TraceV2"
+describe 'TraceV2'
+
+
+
+disable 'ApplicationMapStatisticsCaller_Ver2'
+alter 'ApplicationMapStatisticsCaller_Ver2' , {NAME=>'C',TTL=>'1296000'}
+enable "ApplicationMapStatisticsCaller_Ver2"
+describe 'ApplicationMapStatisticsCaller_Ver2'
+
+disable 'ApplicationMapStatisticsCallee_Ver2'
+alter 'ApplicationMapStatisticsCallee_Ver2' , {NAME=>'C',TTL=>'1296000'}
+enable "ApplicationMapStatisticsCallee_Ver2"
+describe 'ApplicationMapStatisticsCallee_Ver2'
+
+disable 'ApplicationMapStatisticsSelf_Ver2'
+alter 'ApplicationMapStatisticsSelf_Ver2' , {NAME=>'C',TTL=>'1296000'}
+enable "ApplicationMapStatisticsSelf_Ver2"
+describe 'ApplicationMapStatisticsSelf_Ver2'
+
+
+disable 'HostApplicationMap_Ver2'
+alter 'HostApplicationMap_Ver2' , {NAME=>'M',TTL=>'1296000'}
+enable "HostApplicationMap_Ver2"
+describe 'HostApplicationMap_Ver2'
+
+
+disable 'Traces'
+alter 'Traces' , {NAME=>'S',TTL=>'1296000'}, {NAME=>'A',TTL=>'1296000'}, {NAME=>'T',TTL=>'1296000'}
+enable "Traces"
+describe 'Traces'
+
+list
+
+exit
